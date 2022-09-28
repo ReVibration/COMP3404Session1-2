@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP3404Session1", "COMP3404Session1\COMP3404Session1.csproj", "{DF91DC4A-ED0F-459C-83AE-FF3DBB59D2AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COMP3404Session1", "COMP3404Session1\COMP3404Session1.csproj", "{DF91DC4A-ED0F-459C-83AE-FF3DBB59D2AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FishAssets", "FishAssets", "{439C66CE-66DB-41BD-98F7-733EF2FEC945}"
+	ProjectSection(SolutionItems) = preProject
+		COMP3404Session1\FishAssets\AnglerFish_Lit.png = COMP3404Session1\FishAssets\AnglerFish_Lit.png
+		COMP3404Session1\FishAssets\AnglerFish_Unlit.png = COMP3404Session1\FishAssets\AnglerFish_Unlit.png
+		COMP3404Session1\FishAssets\AquariumBackground.png = COMP3404Session1\FishAssets\AquariumBackground.png
+		InvalidStringException.cs = InvalidStringException.cs
+		COMP3404Session1\FishAssets\JavaFish.png = COMP3404Session1\FishAssets\JavaFish.png
+		COMP3404Session1\FishAssets\OrangeFish.png = COMP3404Session1\FishAssets\OrangeFish.png
+		COMP3404Session1\FishAssets\PiranhaGreen.png = COMP3404Session1\FishAssets\PiranhaGreen.png
+		COMP3404Session1\FishAssets\PiranhaRed.png = COMP3404Session1\FishAssets\PiranhaRed.png
+		COMP3404Session1\FishAssets\Seahorse.png = COMP3404Session1\FishAssets\Seahorse.png
+		COMP3404Session1\FishAssets\Urchin.png = COMP3404Session1\FishAssets\Urchin.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

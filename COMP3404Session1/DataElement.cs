@@ -25,7 +25,7 @@ namespace COMP3404Session1
             _text = pText;
             try
             {
-                _image = new Bitmap(pImagePath,true);
+                _image = Bitmap.FromFile(Path.GetFullPath(pImagePath));
             }
             catch (Exception)
             {

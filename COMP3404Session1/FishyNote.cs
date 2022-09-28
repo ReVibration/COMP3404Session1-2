@@ -22,10 +22,10 @@ namespace COMP3404Session1
         private DataElement _data;
 
         //INITIALISE a string to hold the text that will be in the text box
-        private string _text;
+        private string _text = "hello";
 
         //INITIALISE & ASSIGN a path to hold the filename of the required fish image 
-        private string _fishImage = "./FishAssets/OrangeFish.png";
+        private string _fishImagePath = "..\\..\\..\\FishAssets\\OrangeFish.png";
 
         //INITALISE & ASSIGN a boolean field which will determine whether the note is shrunk or expanded
         // with the default value being expanded 
@@ -38,7 +38,7 @@ namespace COMP3404Session1
         public FishyNote()
         {
             InitializeComponent();
-            _data = new DataElement(_text, _fishImage);
+            _data = new DataElement(_text, _fishImagePath);
             CollapseOpenBtn.Image = _data._image;
         }
 
@@ -77,7 +77,7 @@ namespace COMP3404Session1
         }
 
         // DeleteButton_Click - This method will occur when the user clicks the text box and it will make 
-        // the existing text disapear
+        // text that was written before appear again
         //
         // param sender - This is the object that sent the command
         // param e - This is the event that occurs 
@@ -85,8 +85,18 @@ namespace COMP3404Session1
         {
             // SET the existing text in the text box to the text in the data element
             TextBox.Text = _data._text;
-            // SET the local text from the text box text
-            _data._text = TextBox.Text;
+            _text = _data._text;
+        }
+
+        // TextBow_TextChanged - This method will occur when the user edits the text box and it will make 
+        // the existing text will be saved to be shown again
+        //
+        // param sender - This is the object that sent the command
+        // param e - This is the event that occurs 
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            // SET the text variable inside the data element to be what's in the box
+            _text = TextBox.Text;
         }
 
         #region Code Snippet: makes this borderless window movable
@@ -130,5 +140,6 @@ namespace COMP3404Session1
             _mouseDown = false;
         }
         #endregion
+
     }
 }

@@ -41,6 +41,7 @@
             this.TextBox.Size = new System.Drawing.Size(776, 344);
             this.TextBox.TabIndex = 0;
             this.TextBox.Click += new System.EventHandler(this.TextBox_Click);
+            this.TextBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
             // 
             // DeleteButton
             // 
