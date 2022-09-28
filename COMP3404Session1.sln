@@ -10,7 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FishAssets", "FishAssets", 
 		COMP3404Session1\FishAssets\AnglerFish_Lit.png = COMP3404Session1\FishAssets\AnglerFish_Lit.png
 		COMP3404Session1\FishAssets\AnglerFish_Unlit.png = COMP3404Session1\FishAssets\AnglerFish_Unlit.png
 		COMP3404Session1\FishAssets\AquariumBackground.png = COMP3404Session1\FishAssets\AquariumBackground.png
-		InvalidStringException.cs = InvalidStringException.cs
 		COMP3404Session1\FishAssets\JavaFish.png = COMP3404Session1\FishAssets\JavaFish.png
 		COMP3404Session1\FishAssets\OrangeFish.png = COMP3404Session1\FishAssets\OrangeFish.png
 		COMP3404Session1\FishAssets\PiranhaGreen.png = COMP3404Session1\FishAssets\PiranhaGreen.png

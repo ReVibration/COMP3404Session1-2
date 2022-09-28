@@ -22,7 +22,7 @@ namespace COMP3404Session1
         private DataElement _data;
 
         //INITIALISE a string to hold the text that will be in the text box
-        private string _text = "hello";
+        private string _text;
 
         //INITIALISE & ASSIGN a path to hold the filename of the required fish image 
         private string _fishImagePath = "..\\..\\..\\FishAssets\\OrangeFish.png";
@@ -38,7 +38,14 @@ namespace COMP3404Session1
         public FishyNote()
         {
             InitializeComponent();
-            _data = new DataElement(_text, _fishImagePath);
+            try
+            {
+                _data = new DataElement(_text, _fishImagePath);
+            }
+            catch(InvalidStringException)
+            {
+                throw new InvalidStringException("oops!");
+            }
             CollapseOpenBtn.Image = _data._image;
         }
 
@@ -85,7 +92,6 @@ namespace COMP3404Session1
         {
             // SET the existing text in the text box to the text in the data element
             TextBox.Text = _data._text;
-            _text = _data._text;
         }
 
         // TextBow_TextChanged - This method will occur when the user edits the text box and it will make 
@@ -96,7 +102,7 @@ namespace COMP3404Session1
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
             // SET the text variable inside the data element to be what's in the box
-            _text = TextBox.Text;
+            _data._text = TextBox.Text;
         }
 
         #region Code Snippet: makes this borderless window movable
