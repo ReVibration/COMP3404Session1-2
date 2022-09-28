@@ -12,7 +12,7 @@ namespace COMP3404Session1
     /// Author - Bartek Siwak
     /// Date/Version - 21/09/22
     /// </summary>
-    public class DataElement
+    public class DataElement : IDisposable
     {
         //INITIALISE a string field that will store text
         public string _text;
@@ -32,6 +32,14 @@ namespace COMP3404Session1
                 _image = new Bitmap(16,16);
             }
 
+        }
+
+        /// <summary>
+        /// Dispose - This method will dispose of the image 
+        /// </summary>
+        public void Dispose()
+        {
+            _image.Dispose();
         }
 
     }
