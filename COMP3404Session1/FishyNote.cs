@@ -55,9 +55,11 @@ namespace COMP3404Session1
         // param e - This is the event that occurs 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            //DESTORY that fishy note instance
+            //DESTROY the collapsable button image
             CollapseOpenBtn.Image.Dispose();
+            // DISPOSE of the image held in the data element
             _data.Dispose();
+            // DESTROY the fishy note instance 
             this.Dispose();
         }
 
